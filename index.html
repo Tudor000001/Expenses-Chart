@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="css/styles.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+
+        .body {
+            background-color: hsl(27, 66%, 92%);
+        }
+
+        .square {
+            position: absolute;
+            height: 100px;
+            width: 400px;
+            background-color: hsl(10, 79%, 65%);
+            border-radius: 15px;
+            top: 50%;
+            left: 50%;
+            margin-top: -200px;
+            margin-left: -200px;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="square">
+        <div style="display:inline;">
+            <p style="margin:25px; font-family:sans-serif;color:white;">My balance</p>
+            <p style="position:relative; bottom:20px; margin:25px; font-family:sans-serif;font-size:30px; color:white; display:inline;">$<p style="position: relative; right:20px; bottom: 20px; font-family: sans-serif; font-size: 30px; color: white; display:inline;" id="balance">921.48</p>
+        </div>
+        <div style="display:inline;">
+            <div style="position: absolute; left: 320px; bottom: 30px; height: 40px; width: 40px; border-radius: 50%; background-color: hsl(25, 47%, 15%); border: 2px solid hsl(25, 47%, 15%); display: inline; "></div>
+            <div style="position:absolute; left:300px; bottom:30px; height:40px; width:40px; border-radius:50%; background-color:transparent; border:2px solid white; display:inline;"></div>
+        </div>
+    </div>
+    <div style="position: absolute; height: 400px; width: 400px; background-color: white; border-radius: 15px; top: 50%; left: 50%; margin-top: -80px; margin-left: -200px;">
+        <p style="margin: 30px; color: hsl(25, 47%, 15%); font-size:25px; font-weight:600; font-family:sans-serif;">Spending - Last 7 days</p>
+        <div>
+            <div style="position:relative; bottom:90px; right:5px;">
+                <p style="position:absolute;top:160px; left:45px;font-family:Roboto;display:none" id="l">17.45</p>
+                <p style="position: absolute; top: 120px; left: 95px; font-family: Roboto; display: none" id="m">34.91</p>
+                <p style="position: absolute; top: 90px; left: 145px; font-family: Roboto; display: none" id="mi">52.36</p>
+                <p style="position: absolute; top: 110px; left: 195px; font-family: Roboto; display: none" id="j">31.07</p>
+                <p style="position: absolute; top: 130px; left: 240px; font-family: Roboto; display: none" id="v">23.39</p>
+                <p style="position: absolute; top: 100px; left: 285px; font-family: Roboto; display: none" id="s">43.28</p>
+                <p style="position: absolute; top: 140px; left: 335px; font-family: Roboto; display: none" id="d">25.48</p>
+                <div style="top: 200px; left: 50px; height: 30px; width: 30px;" class="bari" id="l1"></div>
+                <div style="top: 158px; left: 100px; height: 70px; width: 30px;" class="bari" id="m1"></div>
+                <div style="top: 130px; left: 150px; height: 100px; width: 30px;" class="bari" id="mi1"></div>
+                <div style="top: 148px; left: 200px; height: 80px; width: 30px;" class="bari" id="j1"></div>
+                <div style="top: 167px; left: 245px; height: 60px; width: 30px;" class="bari" id="v1"></div>
+                <div style="top: 140px; left: 290px; height: 90px; width: 30px;" class="bari" id="s1"></div>
+                <div style="top: 180px; left: 340px; height: 50px; width: 30px;" class="bari" id="d1"></div>
+            </div>
+            <div>
+                <p class="days">mon</p>
+                <p class="days">tue</p>
+                <p class="days">wed</p>
+                <p class="days">thu</p>
+                <p class="days">fri</p>
+                <p class="days">sat</p>
+                <p class="days">sun</p>
+            </div>
+            <hr style="position:relative; top:180px; width:325px; border:1px solid darksalmon;" />
+        </div>
+        <div>
+            <p style="position:relative;margin:10px;left:35px;top:180px;color:gray;font-family:Roboto;">Total this month</p>
+            <p style="position: relative; margin: 10px; left: 35px; top: 180px; color: hsl(25, 47%, 15%);font-size:25px; font-weight:700; font-family: Roboto;">$478.33</p>
+            <p style="position: relative; margin: 10px; left: 300px; top: 130px; color: hsl(25, 47%, 15%);font-size:15px; font-weight:700; font-family: Roboto;">+2.4%<p style="position:relative;margin:10px;left:230px;top:120px;color:gray;font-family:Roboto;">from last month</p>
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Tudor000002</a>.
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

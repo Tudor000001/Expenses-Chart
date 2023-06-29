@@ -1,0 +1,19 @@
+.days {
+    position: relative;
+    display: inline;
+    top: 150px;
+    margin: 10px;
+    left: 35px;
+    color: gray;
+    font-family: Roboto;
+}
+
+.bari {
+    position: absolute;
+    border-radius: 10px;
+    background-color: salmon;
+}
+
+.bari:hover{
+    background-color:lightsalmon;
+}
